@@ -1,7 +1,18 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{-- Different ways of using roles in blade --}}
+            @hasrole('admin')
+            {{_('Admin')}} 
+            @endhasrole
+            @role('agent')
+            {{_('Agent')}}
+            @endrole
+            @role('user')
+            {{_('User')}}
+            @endrole            
             {{ __('Dashboard') }}
+            {{auth()->user()->hasrole('admin')? "Welcome":""}}
         </h2>
     </x-slot>
 
