@@ -16,13 +16,13 @@ Follow these instructions to get the project up and running on your local machin
 
 `composer install`
 
-`php artisan key:generate``
+`php artisan key:generate`
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=strongindia
-DB_USERNAME=root
+DB_CONNECTION=mysql <br>
+DB_HOST=127.0.0.1 <br>
+DB_PORT=3306 <br>
+DB_DATABASE=strongindia <br>
+DB_USERNAME=root <br>
 DB_PASSWORD=
 
 `php artisan migrate`
